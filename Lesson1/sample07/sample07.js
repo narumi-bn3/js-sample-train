@@ -10,3 +10,4 @@ console.log(myNumber)
 console.log(myString + myString)
 
 console.log(myNumber + myNumber)
+
