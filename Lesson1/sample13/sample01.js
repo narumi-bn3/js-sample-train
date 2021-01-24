@@ -15,3 +15,12 @@ console.log(weeks.length)
 for (let i = 0; i < weeks.length; i++){
     console.log("今日の曜日は" + weeks[i] + "曜日です")
 }
+
+//配列のプロパティーについての勉強
+//データには、プリミティブ型とユーザー定義型が存在します。
+//プリミティブ型には、既に言語で定義されているオブジェクトです。(int,float,double,string...)
+//ユーザ定義型についてはあとで勉強。
+
+weeks.forEach(function(item,i){
+    //処理書きます。
+})
