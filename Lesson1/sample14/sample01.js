@@ -1,8 +1,9 @@
 //関数についての学習
 //関数とは、処理をひとまとまりにし呼び出すための構文です。
 
-//function 関数名() {
+//function 関数名(引数１,引数２, ... etc) {
 // 処理   
+// return 戻り値
 // }
 
 //　コンソールに出力する関数の作成　outputConsole
@@ -68,10 +69,50 @@ function test() {
     console.log(p)
 }
 
-console.log(p)
+// console.log(p)
 
 // 関数宣言と関数式
 
-console fn = function () {
-    
+
+
+// ２つの変数をコンソールに出力する関数： outputTwo
+function outputTwo(a,b) {
+    console.log(a,b)
 }
+outputTwo("23","32")
+
+
+//１つの変数を３倍にしてコンソールに出力する関数: outputThreefold
+function outputThreefold(c) {
+    console.log(c * 3)
+}
+outputThreefold(6)
+//３つの引数を受け取り　a * b / c の結果を返す関数：triangleArea を作成しコンソールに出力して下さい。
+function triangleArea(a,b,c) {
+    return (a * b / c);
+}
+
+console.log(triangleArea(2,3,2))
+
+// Hell World. を１０行コンソールに表示する関数　hello10
+function hello10() {
+    for(let i = 0; i < 10; i++){
+        console.log("Hello World.")
+    }
+}
+
+//　引数の値を１/4にする関数を作成　div4
+function div4(d){
+    return d / 4
+}
+
+// 引数の値が偶数の時コンソールに「偶数です」奇数の時に「奇数です」と表示する関数 evenorodd
+function evenorodd(e){
+    let f = e % 2
+    if(f === 0){
+        console.log("偶数です")
+    }else{
+        console.log("奇数です")
+    }
+}
+evenorodd(3)
